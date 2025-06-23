@@ -1,5 +1,8 @@
 # mj_home_remake
+
 저를 소개하는 포트폴리오 홈페이지입니다.
+
+GitHub Pages url : <a>`https://LATIsi.github.io/mj_home_remake`</a>
 
 </br>
 
@@ -15,6 +18,10 @@
 
 UI디자인은 figma로 디자인했습니다.
 
+figma url : <a>`https://www.figma.com/design/ySerMXtsPgUKpPST4iqPbh/potpolio-team-library?m=auto&t=YAW087Q47k6F7WCD-1`</a>
+
+</br>
+
 기여도 : 김민지 (본인) 100%
 
 </br>
@@ -26,11 +33,15 @@ UI디자인은 figma로 디자인했습니다.
 - css
 - js ( 제이쿼리 )
 - html
-- **git hub 배포** (gh-pages)
+- **GitHub Pages 배포**
 
 </br>
 
 # 설치 및 실행 방법
+
+맨 위의 깃 허브 배포 url에 들어가거나 또는 .. 
+
+<br>
 
 ### 기본적으로 실행하기 위해서 필요한 것들
 - VSCODE 등 편집 프로그램
@@ -111,13 +122,21 @@ index.html을 연다
 
 - 이미지 에러 시 대체 이미지 설정
 
-<a>'https://plusratio.tistory.com/168'</a>
+<a>`https://plusratio.tistory.com/168`</a>
 
 <br>
 
+
+- GitHub Pages로 HTML 배포하기
+
+<a>`https://velog.io/@commi1106/Github-Pages%EB%A1%9C-HTML-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0`</a>
+
+<br>
+
+
 - 커밋 메시지 규칙
 
-<a>'https://velog.io/@chojs28/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EA%B7%9C%EC%B9%99'</a>
+<a>`https://velog.io/@chojs28/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EA%B7%9C%EC%B9%99`</a>
 
 <br>
 
