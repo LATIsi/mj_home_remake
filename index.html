@@ -6,28 +6,43 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mj's portfolio</title>
+    <title>MJ's Portfolio</title>
 </head>
 <body>
-    테스트
-    <header></header>
-    <div class="content_all">
-        <ul class="content_element">
-            <li>
-                home
+    <header class="center_all">
+        <nav>
+            <h1 class="roboto-header-logo"><a href="./index.html">MJ's Portfolio</a></h1>
+            <ul class="roboro-menu">
+                <li class="nav_point"><a href="./index.html">HOME</a></li>
+                <li><a href="./html/intro.html">INTRO</a></li>
+                <li><a href="./html/skill.html">SKILL</a></li>
+                <li><a href="./html/project.html">PROJECT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content_element center_all">
+        <ul>
+            <li id="home">
+                <ul>
+                    <li class="righteous-home">MJ_Portfolio</li>
+                    <li><hr></li>
+                    <li class="righteous-home">welcome to my portfolio!</li>
+                    <li id="home_overlay"> </li>
+                    <li><img src="./image/domenico-loia-hGV2TfOh0ns-unsplash.jpg" id="home_background"></li>
+                </ul>
             </li>
-            <li>
-                intro
+            <li id="intro">
+                INTRO
             </li>
-            <li>
-                skill
+            <li id="skill">
+                SKILL
             </li>
-            <li>
-                project
+            <li id="project">
+                PROJECTs
             </li>
         </ul>
     </div>
-    <footer>
+    <footer class="center_all">
         footer
     </footer>
 </body>

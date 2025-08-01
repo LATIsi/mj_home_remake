@@ -1,10 +1,66 @@
 @charset "utf-8";
 
+/* 폰트 import 정리 */
+
+/* google - roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* google - Righteous font */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* google - roboto font */
+
+
+/* google - roboto font */
+
+
+
+
+
+
+
+
+
+
+/*font*/
+
+.roboto-header-logo {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.roboro-menu{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: normal;
+}
+
+.righteous-home {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/*기본적인 css*/
+
 *{
     margin: 0;
     padding: 0;
+    position: relative;
+    color:#223440;
 }
 
+html, body{
+    width: 100%;
+    height: 100%;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -16,4 +72,215 @@ ul{
 
 button{
     cursor: pointer;
+}
+
+.center_all {
+ width: 1200px;
+ background-color: aqua;
+ margin: 0 auto;
+}
+
+img{
+    background-size: cover;
+}
+
+
+/*헤더 css*/
+
+
+header nav{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    line-height : 45px;
+}
+
+header>nav>h1{
+    height: 45px;
+    width: 345px;
+}
+
+header nav ul{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    margin: auto;
+}
+
+header nav ul>li>a{
+    width: 150px;
+    height: 45px;
+    display: block;
+    margin: auto 0 ;
+}
+
+header nav ul>li>a:hover{
+    color: #FFC31F;
+}
+
+.nav_point{
+    color: #035AA6;
+}
+
+.nav_point>a:hover{
+    color: #035AA6;
+}
+
+/*전체적인 컨텐츠 부분 영역 지정*/
+
+.content_element{
+    height: calc(100% - 100px);
+    width: inherit; 
+    background-color: aquamarine;
+}
+
+.content_element>ul {
+    height: 100%;
+    width: inherit; 
+}
+
+.content_element>ul>li{
+    height: inherit;
+    width: inherit;
+    display: none;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+
+/*처음 화면 노출*/
+.content_element>ul>li:nth-child(1){
+    display: block;
+}
+
+
+/*홈 화면*/
+
+#home{
+    position: relative;
+    overflow: hidden;
+}
+
+#home ul{
+    margin: auto 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: left;  
+    padding: 15% 0 0 0;
+}
+
+
+/* 홈 메인 텍스트 1 */
+
+#home ul>li:nth-child(1){
+    font-size: 96px;
+    color:white;
+    z-index: 4;
+}
+
+
+/* 홈 hr */
+
+#home ul>li:nth-child(2){
+    border: none;
+    height: 3px;
+    background-color: white;
+    z-index: 4;
+}
+
+
+/* 홈 메인 텍스트 2 */
+
+#home ul>li:nth-child(3){
+    font-size: 64px;
+    color:white;
+    z-index: 4;
+}
+
+
+/* 홈 배경 이미지 */
+
+#home ul>li:nth-child(5){
+    position: absolute;
+    top:-50%;
+    left:-50%;
+    z-index: 2;
+}
+
+
+#home_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    position: absolute;
+    display: block;
+    top:0;
+    left:-50%;
+    z-index: 3;
+    backdrop-filter:blur(10px);
+}
+
+#home_background{
+    background-image:url(../image/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
+    z-index: 2;
+    object-fit:cover;
+    width: 100%;
+}
+
+
+
+
+
+/*인트로 화면*/
+
+#intro{
+    background-color: rgb(172, 127, 255);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*스킬 화면*/
+
+#skill{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/*프로젝트 화면*/
+
+#project{
+    background-color: rgb(255, 232, 127);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+footer{
+    display: none;
 }

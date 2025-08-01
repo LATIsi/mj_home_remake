@@ -2,7 +2,11 @@
 
 저를 소개하는 포트폴리오 홈페이지입니다.
 
-GitHub Pages url : <a>`https://LATIsi.github.io/mj_home_remake`</a>
+22년도에 만든것을 다시 리메이크 했습니다. 
+
+</br>
+
+GitHub Pages url : <a>https://LATIsi.github.io/mj_home_remake</a>
 
 </br>
 
@@ -18,7 +22,7 @@ GitHub Pages url : <a>`https://LATIsi.github.io/mj_home_remake`</a>
 
 UI디자인은 figma로 디자인했습니다.
 
-figma url : <a>`https://www.figma.com/design/ySerMXtsPgUKpPST4iqPbh/potpolio-team-library?m=auto&t=YAW087Q47k6F7WCD-1`</a>
+figma url : <a>https://www.figma.com/design/ySerMXtsPgUKpPST4iqPbh/potpolio-team-library?m=auto&t=YAW087Q47k6F7WCD-1</a>
 
 </br>
 
@@ -34,6 +38,10 @@ figma url : <a>`https://www.figma.com/design/ySerMXtsPgUKpPST4iqPbh/potpolio-tea
 - js ( 제이쿼리 )
 - html
 - **GitHub Pages 배포**
+
+
+css의 경우 font 이름 법칙은 aa-aaa-aaa <br>
+레이어 이름 법칙은 aa_aa_aaa 
 
 </br>
 
@@ -110,33 +118,33 @@ index.html을 연다
 
 - 리드미 작성 하는 법
 
-<a>`https://jeonge.tistory.com/157 `</a>
+<a>https://jeonge.tistory.com/157</a>
 
 <br>
 
 - 라이선스 추가하는 법
 
-<a>`https://m.blog.naver.com/PostView.nhn?blogId=dhdh6190&logNo=221145291899`</a>
+<a>https://m.blog.naver.com/PostView.nhn?blogId=dhdh6190&logNo=221145291899</a>
  
 <br>
 
 - 이미지 에러 시 대체 이미지 설정
 
-<a>`https://plusratio.tistory.com/168`</a>
+<a>https://plusratio.tistory.com/168</a>
 
 <br>
 
 
 - GitHub Pages로 HTML 배포하기
 
-<a>`https://velog.io/@commi1106/Github-Pages%EB%A1%9C-HTML-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0`</a>
+<a>https://velog.io/@commi1106/Github-Pages%EB%A1%9C-HTML-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0</a>
 
 <br>
 
 
 - 커밋 메시지 규칙
 
-<a>`https://velog.io/@chojs28/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EA%B7%9C%EC%B9%99`</a>
+<a>https://velog.io/@chojs28/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EA%B7%9C%EC%B9%99</a>
 
 <br>
 
