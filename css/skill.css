@@ -1,0 +1,52 @@
+
+
+
+/*스킬인트로 화면*/
+
+#skill{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*스킬 화면*/
+
+#skill{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/*프로젝트 화면*/
+
+#project{
+    background-color: rgb(255, 232, 127);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+footer{
+    display: none;
+}

@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* 폰트 import 정리 */
+
+/* google - roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* google - Righteous font */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* google - roboto font */
+
+
+/* google - roboto font */
+
+
+/*기본적인 css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color:#223440;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+.center_all {
+ width: 1200px;
+ background-color: aqua;
+ margin: 0 auto;
+}
+
+img{
+    background-size: cover;
+}
+
+
+
+
+
+/*로고, 메뉴 font*/
+
+.roboto-header-logo {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.roboro-menu{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: normal;
+}
+
+
+
+/*헤더 css*/
+
+
+header nav{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    line-height : 45px;
+}
+
+header>nav>h1{
+    height: 45px;
+    width: 345px;
+}
+
+header nav ul{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    margin: auto;
+}
+
+header nav ul>li>a{
+    width: 150px;
+    height: 45px;
+    display: block;
+    margin: auto 0 ;
+}
+
+header nav ul>li>a:hover{
+    color: #FFC31F;
+}
+
+.nav_point{
+    color: #035AA6;
+}
+
+.nav_point>a:hover{
+    color: #035AA6;
+}
+
+/*전체적인 컨텐츠 부분 영역 지정*/
+
+.content_element{
+    height: calc(100% - 100px);
+    width: inherit; 
+    background-color: aquamarine;
+}
+
+.content_element>ul {
+    height: 100%;
+    width: inherit; 
+}
+
+.content_element>ul>li{
+    height: inherit;
+    width: inherit;
+    position: relative;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,10 @@
+
+
+
+/*인트로 화면*/
+
+#intro{
+    background-color: rgb(172, 127, 255);
+    position: relative;
+    overflow: hidden;
+}

@@ -1,0 +1,87 @@
+
+
+/*홈 font*/
+
+.righteous-home {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+
+/*홈 화면*/
+
+#home{
+    position: relative;
+    overflow: hidden;
+}
+
+#home>ul{
+    margin: auto 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: left;  
+    padding: 15% 0 0 0;
+}
+
+
+/* 홈 메인 텍스트 1 */
+
+#home>ul>li:nth-child(1){
+    font-size: 96px;
+    color:white;
+    z-index: 4;
+}
+
+
+/* 홈 hr */
+
+#home ul>li:nth-child(2){
+    border: none;
+    height: 3px;
+    background-color: white;
+    z-index: 4;
+}
+
+
+/* 홈 메인 텍스트 2 */
+
+#home>ul>li:nth-child(3){
+    font-size: 64px;
+    color:white;
+    z-index: 4;
+}
+
+
+/* 홈 배경 이미지 */
+
+#home>ul>li:nth-child(5){
+    position: absolute;
+    top:-50%;
+    left:-50%;
+    z-index: 2;
+}
+
+
+#home_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    position: absolute;
+    display: block;
+    top:0;
+    left:-50%;
+    z-index: 3;
+    backdrop-filter:blur(10px);
+}
+
+#home_background{
+    background-image:url(../image/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
+    z-index: 2;
+    object-fit:cover;
+    width: 100%;
+}
+
