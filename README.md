@@ -11,8 +11,8 @@ GitHub Pages url : <a>https://LATIsi.github.io/mj_home_remake</a>
 </br>
 
 ## PC
+<img width="1378" height="773" alt="Image" src="https://github.com/user-attachments/assets/74e99deb-0773-438b-9400-399146bf7c7b" />
 
-<img width="299" alt="image" src="https://user-images.githubusercontent.com/91597005/147817866-b2133d71-3809-4754-8919-aceab3e05c7c.png">
 
 ## 모바일
 
@@ -38,6 +38,7 @@ figma url : <a>https://www.figma.com/design/ySerMXtsPgUKpPST4iqPbh/potpolio-team
 - js ( 제이쿼리 )
 - html
 - **GitHub Pages 배포**
+- 아이콘 플러그인 iconify (<a>https://iconify.design/</a>) 활용
 
 
 css의 경우 font 이름 법칙은 aa-aaa-aaa <br>
@@ -148,4 +149,8 @@ index.html을 연다
 
 <br>
 
+- scroll 커스텀 
 
+<a>https://sanghee01.tistory.com/22</a>
+
+<br>

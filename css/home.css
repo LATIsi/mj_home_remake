@@ -18,19 +18,20 @@
     overflow: hidden;
 }
 
-#home>ul{
+#home ul{
     margin: auto 50%;
     width: 100%;
     height: 100%;
     display: block;
     text-align: left;  
-    padding: 15% 0 0 0;
 }
 
 
 /* 홈 메인 텍스트 1 */
 
-#home>ul>li:nth-child(1){
+#home ul>li:nth-child(1){
+    margin-top: 30vh;
+    position: relative;
     font-size: 96px;
     color:white;
     z-index: 4;
@@ -40,6 +41,7 @@
 /* 홈 hr */
 
 #home ul>li:nth-child(2){
+    position: relative;
     border: none;
     height: 3px;
     background-color: white;
@@ -49,7 +51,8 @@
 
 /* 홈 메인 텍스트 2 */
 
-#home>ul>li:nth-child(3){
+#home ul>li:nth-child(3){
+    position: relative;
     font-size: 64px;
     color:white;
     z-index: 4;
@@ -58,7 +61,7 @@
 
 /* 홈 배경 이미지 */
 
-#home>ul>li:nth-child(5){
+#home ul>li:nth-child(5){
     position: absolute;
     top:-50%;
     left:-50%;
@@ -73,9 +76,9 @@
     position: absolute;
     display: block;
     top:0;
-    left:-50%;
+    left:0;
     z-index: 3;
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(8px);
 }
 
 #home_background{
@@ -83,5 +86,9 @@
     z-index: 2;
     object-fit:cover;
     width: 100%;
+    height: auto;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 

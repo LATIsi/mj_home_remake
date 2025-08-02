@@ -8,10 +8,22 @@
 /* google - Righteous font */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-/* google - roboto font */
+/* google - Noto Sans Korean font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* google - NATS font */
+@import url('https://fonts.cdnfonts.com/css/nats');
+
+/* google - Russo One font */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 
-/* google - roboto font */
+
+
+
+
+
+
 
 
 /*기본적인 css*/
@@ -19,11 +31,11 @@
 *{
     margin: 0;
     padding: 0;
-    position: relative;
     color:#223440;
 }
 
 html, body{
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -72,6 +84,19 @@ img{
     font-style: normal;
 }
 
+.Righteous-title{
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-shadow: 0px 3.81px 3.81px rgba(0, 0, 0,0.25);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  color:white;
+  text-decoration-thickness: 6%;
+  text-underline-offset : 23.5%;
+  font-size: 42px;
+}
 
 
 /*헤더 css*/
@@ -79,7 +104,7 @@ img{
 
 header nav{
     background-color: white;
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     position: relative;
@@ -121,8 +146,8 @@ header nav ul>li>a:hover{
 /*전체적인 컨텐츠 부분 영역 지정*/
 
 .content_element{
-    height: calc(100% - 100px);
-    width: inherit; 
+    height: calc(100% - 80px);
+    width: inherit;
     background-color: aquamarine;
 }
 
