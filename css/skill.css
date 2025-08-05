@@ -1,17 +1,41 @@
+@charset "utf-8";
 
 
 
-/*스킬인트로 화면*/
+/*스킬 font*/
 
-#skill{
-    background-color: rgb(255, 0, 0);
-    position: relative;
-    overflow: hidden;
+.skill_title_text>span:nth-child(1) {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2rem;
 }
 
+.skill_title_text>span:nth-child(2) {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.2rem;
+}
 
+.Righteous-skill-title{
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color:white;
+  font-size: 2rem;
+}
 
-
+.roboto-skill-description {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+}
 
 
 
@@ -19,34 +43,517 @@
 /*스킬 화면*/
 
 #skill{
-    background-color: rgb(255, 0, 0);
     position: relative;
-    overflow: hidden;
+    background-color: #7A64FF;
+}
+
+#skill>ul{
+    position: relative;
+    margin: 0 auto;
+    padding: 1.5% 0 0 0;
+    width: 1200px;
+    display: block;
+    text-align: center;
+}
+
+#skill>ul>li{
+    margin-left: 4%;
 }
 
 
 
+/* 스킬 버튼 */
 
 
+.skill_button{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 1.5rem;
+}
 
+.skill_button>li{
+    border-radius: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+    background-color: #CECECE;
+}
 
+.skill_button .skill_set{
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+    background-color: white;
+}
 
-
-/*프로젝트 화면*/
-
-#project{
-    background-color: rgb(255, 232, 127);
-    position: relative;
-    overflow: hidden;
+.select{
+    background-color: white;
 }
 
 
+/* 스킬 콘텐츠 노출 */
 
 
-
-
-
-
-footer{
+.skill_contents>li{
     display: none;
 }
+
+.skill_contents>li:nth-child(1){
+    display: block;
+}
+
+
+/* 스킬 리스트 타이틀 */
+
+
+.skill_tag{
+    border-radius: 20px 20px 0 0;
+    background-color: white;
+    z-index: 3;
+}
+
+
+.skill_list{
+    padding: 0px 40px 20px 40px;
+    gap:10px;
+    height: 50vh;
+    background-color: white;
+    border-radius: 0 0 20px 20px ;
+    -webkit-box-shadow: inset 0px 22px 39px -32px rgba(66, 68, 90, 0.4);
+    -moz-box-shadow: inset 0px 22px 39px -32px rgba(66, 68, 90, 0.4);
+    box-shadow: inset 0px 22px 39px -32px rgba(66, 68, 90, 0.4);
+    display: flex;
+    overflow-x: hidden;
+}
+
+.skill_list::-webkit-scrollbar{
+  display:none;
+}
+
+
+.skill_list>ul{
+    width: 100%;
+    height: auto;
+}
+
+
+.skill_list>ul>li{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 8% 10px;
+    margin: 0px 20px;
+    padding: 15px 20px;
+}
+
+.skill_list>ul>li:last-child{
+    padding-bottom:40px;
+}
+
+/* 스킬 리스트 */
+
+
+
+.skill_list>ul>li>img{
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 10px 15px 0px 10px;
+    align-items: center;
+    border: none;
+}
+
+
+.skill_description_main{
+    width: 400px;
+    padding:5px 0px;
+    position: relative;
+    gap:10px;
+}
+
+.skill_title_text{
+    padding:10px 0px;
+}
+
+.skill_title_text>span:nth-child(1){
+    position: absolute;
+    left: 0;
+    padding-top:4px;
+}
+
+.skill_title_text>span:nth-child(2){
+    position: absolute;
+    right: 0;
+}
+
+.skill_title_gauge{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* 스킬 리스트 게이지 값 조절 
+https://stackoverflow.com/questions/9730612/get-element-css-property-width-height-value-as-it-was-set-in-percent-em-px-et
+참고하기
+*/
+
+.skill_title_gauge{
+    width: 100%;
+    padding:8px 3px;
+}
+
+.skill_title_gauge span{
+    position: absolute;
+    display: block;
+    border-radius: 25px;
+    top:0;
+    left:0;
+}
+
+.gauge{
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.gauge_bg{
+    height: 100%;
+    width: 100%;
+}
+
+.gauge_40{
+    width: 40%;
+}
+
+.gauge_50{
+    width: 50%;
+}
+
+.gauge_60{
+    width: 60%;
+}
+
+.gauge_70{
+    width: 70%;
+}
+
+.gauge_80{
+    width: 80%;
+}
+
+.gauge_90{
+    width: 90%;
+}
+
+.gauge_bg{
+    display: block;
+    width: 100%;
+    background-color: #E4E4E4;
+}
+
+
+/* 스킬 타이틀 텍스트 색 (보통) */
+
+
+.development_text_color{
+    padding:10px 0;
+    color:#7A64FF;
+}
+
+
+.design_text_color{
+    padding:10px 0;
+    color:#4FADFF;
+}
+
+.office_work_text_color{
+    padding:10px 0;
+    color:#FFC31F;
+}
+
+
+/* 스킬 리스트 게이지 색 (강조) */
+
+
+.development_gauge{
+    background-color: #6200FF;
+}
+
+.design_gauge{
+    background-color: #088BFF;
+}
+
+.office_work_gauge{
+    background-color: #FF6F00;
+}
+
+
+/* 스킬 리스트 선 밝은색 (밝은색) */
+
+
+
+.development_line{
+    background-color: #EFD3FF;
+}
+
+.design_line{
+    background-color: #C3E3FF;
+}
+
+.office_work_line{
+    background-color: #FFDC8B;
+}
+
+
+
+/* 스킬 리스트 부가 설명 */
+
+.skill_description_descript{
+    text-align: left;
+    display: flex;
+    gap: 20px;
+}
+
+.skill_description_descript>span{
+    display: block;
+    height: auto;
+    width: 15px;
+    margin: 10px 20px 0 20px;
+}
+
+.skill_description_descript>p{
+    padding:20px 5px 15xp 5px;
+    width: 100%;
+    height: auto;
+    margin: auto 0 ;
+}
+
+
+
+
+
+
+/* 스킬 리스트 아이콘 */
+
+
+/* html/css */
+.flowbite--html-solid {
+  display: inline-block;
+  width: 47px;
+  height: 53px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m3 2l1.578 17.824L12 22l7.467-2.175L21 2zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565l-4.246 1.381l-4.281-1.455l-.288-2.932h2.024l.16 1.411l2.4.815l2.346-.763l.297-3.005H7.416l-.562-6.05h10.412z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 120% 120%;
+  mask-size: 100% 100%;
+}
+
+/* 자바 스크립트 */
+
+.cib--javascript {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M0 0h32v32H0zm29.38 24.37c-.234-1.464-1.188-2.688-4.005-3.833c-.979-.458-2.073-.781-2.396-1.521c-.12-.438-.141-.677-.063-.938c.203-.865 1.219-1.12 2.021-.88c.521.161 1 .557 1.302 1.198c1.38-.901 1.38-.901 2.339-1.5c-.359-.557-.536-.802-.781-1.036c-.839-.943-1.958-1.422-3.776-1.38l-.943.12c-.901.219-1.76.698-2.281 1.339c-1.516 1.719-1.078 4.719.76 5.964c1.818 1.359 4.479 1.656 4.823 2.938c.318 1.563-1.161 2.063-2.625 1.88c-1.078-.24-1.677-.781-2.339-1.781l-2.438 1.401c.276.641.599.917 1.078 1.479c2.318 2.339 8.12 2.219 9.161-1.339c.036-.12.318-.943.099-2.198zm-11.979-9.662h-2.995c0 2.583-.016 5.151-.016 7.74c0 1.641.083 3.151-.182 3.615c-.443.917-1.573.802-2.089.641c-.526-.26-.797-.62-1.104-1.141c-.089-.141-.151-.26-.172-.26l-2.432 1.5c.406.839 1 1.563 1.766 2.021c1.141.682 2.672.901 4.276.542c1.042-.302 1.943-.922 2.411-1.88c.682-1.24.536-2.76.531-4.464c.016-2.74 0-5.479 0-8.24z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+/*vscode*/
+
+.akar-icons--vscode-fill {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none'%3E%3Cg fill='%23000' clip-path='url(%23akarIconsVscodeFill0)'%3E%3Cpath d='M.228 8.37s-.584-.427.117-.995L1.98 5.897s.467-.497.962-.064l15.081 11.542v5.534s-.007.87-1.11.774z'/%3E%3Cpath d='M4.116 11.937L.228 15.509s-.4.3 0 .837l1.805 1.66s.429.465 1.062-.065l4.121-3.158zm6.824.029l7.13-5.502l-.047-5.505s-.305-1.202-1.32-.576L7.216 9.11z'/%3E%3Cpath d='M16.912 23.69c.414.428.916.288.916.288l5.556-2.767c.711-.49.611-1.098.611-1.098V3.588c0-.726-.735-.977-.735-.977L18.444.264c-1.052-.657-1.741.119-1.741.119s.886-.645 1.32.576v21.85c0 .15-.032.297-.095.43c-.127.259-.402.5-1.062.4z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='akarIconsVscodeFill0'%3E%3Cpath fill='%23fff' d='M0 0h24v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/g%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+/*github*/
+
+.ri--github-fill {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.001 2c-5.525 0-10 4.475-10 10a9.99 9.99 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.3 9.3 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.02 10.02 0 0 0 22 12c0-5.525-4.475-10-10-10'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+
+/*포토샵*/
+
+.file-icons--adobe-photoshop {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M512 512H0V0h512zM406.41 217.014v-39.71c-6.54-2.912-43.991-13.625-73.578-2.335c-42.62 16.262-41.089 65.252-24.916 84.479c20.955 24.912 73.082 34.2 64.552 58.652c-4.417 12.662-25.038 14.866-43.218 10.615c-16.93-3.958-31.65-13.986-31.65-13.986v42.045s14.55 8.112 32.408 10.042c22.893 2.473 51.589-2.197 65.965-14.975c25.59-22.747 29.52-73.137-18.975-96.536c-40.355-19.47-39.691-25.027-39.408-35.014c.38-13.376 28.464-21.61 68.82-3.277M188.79 105.575c33.577 1.168 82.922 16.643 82.922 82.63s-60.374 87.64-115.463 82.922v93.433H115.21V106.45s40.001-2.043 73.579-.875m10.657 124.675c17.696-6.457 29.198-20.338 29.198-41.9c0-22.861-11.705-38.342-29.607-42.715c-19.386-4.737-42.789-1.945-42.789-1.945v90.044s32.395.458 43.198-3.484' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+
+
+/*프리미어*/
+
+
+.file-icons--adobe-premiere {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M0 0v512h512V0zm264.095 237.798c-18.461 26.616-55.42 40.048-106.423 37.639v97.132H114.13V103.5l65.872-1.116c54.756-2.06 96.733 26.942 97.133 84.852c-.472 20.392-3.909 37.4-13.04 50.563m142.551-29.35c-.053 1.732-.938 2.274-2.233 2.233c-16.247-1.473-32.992 1-46.891 4.466V372.57h-43.544V214.03c.175-9.395-.341-16.216-1.116-23.446c-.164-.827-.19-2.562 2.233-3.35c21.767-7.895 54.646-17.423 89.318-16.746c1.37-.007 2.222.61 2.233 2.233zm-174.17-20.097c.051 13.428-2.17 23.026-7.294 29.907c-13.199 17.723-39.21 17.42-47.412 18.102h-20.098v-94.9h23.446c38.09.267 50.778 19.538 51.358 46.891'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+/*망고보드*/
+
+
+.noto--mango {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3CradialGradient id='notoMango0' cx='75.424' cy='-61.613' r='183.963' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='.532' stop-color='%23fff'/%3E%3Cstop offset='.615' stop-color='%23000'/%3E%3Cstop offset='.696' stop-color='%23000'/%3E%3Cstop offset='.739' stop-color='%23000'/%3E%3Cstop offset='.793' stop-color='%23000'/%3E%3Cstop offset='.839' stop-color='%23000'/%3E%3Cstop offset='.883' stop-color='%23000'/%3E%3Cstop offset='.925' stop-color='%23000'/%3E%3Cstop offset='.962' stop-color='%23000'/%3E%3C/radialGradient%3E%3Cpath fill='url(%23notoMango0)' d='M4.03 89.43c-1.2 6.01 5.66 29.12 41.45 33.74c18.39 2.37 36.45-4.16 50.75-15.11S119.3 83 122.31 70.11c4.63-19.85-.69-49.82-40.06-51.59c-40.26-1.81-53.79 40.28-62.23 52.65C9.86 86.08 5.12 84 4.03 89.43'/%3E%3Cpath fill='%23000' d='M41.89 36.33s13.57 6.9 34.61 5.44c17.03-1.18 23.73-9.54 23.73-9.54s7.49 2.06 12.46.74c1.99-.53 2.42-1.61-.01-4.13c-3.67-3.82-16.27-10.89-34.85-9.7c-23.25 1.51-35.94 17.19-35.94 17.19'/%3E%3Cpath fill='%23fff' d='M26.04 76.62c2.36 3.93 9.35-1.14 14.27-6.07c7.1-7.12 10.33-13.64 12.22-16.95s4.45-10.44-.71-11.59c-5.37-1.19-6.96 5.45-9.72 10.34s-6.6 10.71-9.68 14.5c-3.27 4.03-7.78 7.44-6.38 9.77'/%3E%3Cpath fill='%23000' d='M102.36 24.98c-.68 2.97 2.05 5.05 3.94 6.54s6.15 2.05 7.57 1.02c1.42-1.02-.16-4.02.87-5.83c1.02-1.81 2.84-4.02.63-5.52c-1.85-1.26-4.34-1.73-6.62-1.26s-2.29 2.21-3.23 2.68c-.96.48-2.93 1.35-3.16 2.37'/%3E%3Cpath fill='%23000' d='M100.14 25.88c-2.52 1.1-9.94 6.95-27.26 8.28c-19.1 1.47-41.53-.8-45.27-1.33s-10.12-.78-10.03-2.38c.13-2.4 2.61-1.63 7.61-3.07c6.01-1.74 12.15-4.14 16.83-6.94c7.18-4.31 21.8-15.09 36.19-15.36c15.76-.29 20.83 4.67 24.7 8.81s3.93 8.48 2.86 10.22c-1.06 1.74-2.56.44-5.63 1.77'/%3E%3Cpath fill='%23fff' d='M50.46 24.92c.37.46 7.35.72 11.24.59c8.88-.29 15.91-2.65 24.66-3.63s16.38 0 16.67-.34c.53-.62-4.84-7.92-22.41-5.95c-6.47.73-14.79 4.02-20.53 6.31c-3.66 1.49-9.98 2.58-9.63 3.02'/%3E%3C/svg%3E");
+}
+
+
+
+/*피그마*/
+
+
+.solar--figma-bold {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M8.667 9.417a2.583 2.583 0 1 0 0 5.166h2.583V9.417zm2.583-1.5H8.667a2.583 2.583 0 0 1 0-5.167h2.583zm1.5-5.167v5.167h2.583a2.584 2.584 0 0 0 0-5.167zm2.583 6.666a2.583 2.583 0 0 0-2.583 2.542v.083a2.583 2.583 0 1 0 2.583-2.625m-6.666 6.667a2.584 2.584 0 1 0 2.583 2.584v-2.584z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+
+
+/*워드*/
+
+.mdi--file-word {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm1.2 18h-1.4L12 13.2L10.2 20H8.8l-2.2-9h1.5l1.4 6.8l1.8-6.8h1.3l1.8 6.8l1.4-6.8h1.5zM13 9V3.5L18.5 9z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+
+
+/*엑셀*/
+
+
+.ph--microsoft-excel-logo {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23000' d='M200 24H72a16 16 0 0 0-16 16v24H40a16 16 0 0 0-16 16v96a16 16 0 0 0 16 16h16v24a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16V40a16 16 0 0 0-16-16m-40 80h40v48h-40Zm40-16h-40v-8a16 16 0 0 0-16-16V40h56ZM72 40h56v24H72ZM40 80h104v96H40Zm32 112h56v24H72Zm72 24v-24a16 16 0 0 0 16-16v-8h40v48Zm-78.15-69.12L81.59 128l-15.74-18.88a8 8 0 0 1 12.3-10.24L92 115.5l13.85-16.62a8 8 0 1 1 12.3 10.24L102.41 128l15.74 18.88a8 8 0 0 1-12.3 10.24L92 140.5l-13.85 16.62a8 8 0 0 1-12.3-10.24'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+
+
+
+/*파워포인트*/
+
+
+.file-icons--microsoft-powerpoint {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M488.698 58.311H302.231V5.981h-32.968L0 52.614v406.89l266.066 46.515h36.165v-58.144h174.49c9.942-.465 20.99.524 29.478-5.64c6.745-10.407 5.11-23.432 5.692-35.177V81.104c1.337-13.373-9.82-24.072-23.193-22.793M170.535 275.304c-13.198 6.744-28.316 5.814-42.677 5.349l-.058 68.202l-34.596-2.907l.058-186.35c31.573 1.511 69.831-12.501 95.996 11.163c25.06 30.41 18.431 86.344-18.723 104.543m313.572 145.13H302.231v-36.518h139.545V360.66H302.231v-29.072h139.545V308.33H302.289s-.058-22.792-.116-34.188c23.025 7.151 49.248 6.977 69.83-6.861c22.27-13.199 33.898-38.375 35.817-63.493h-76.517v-75.936l-29.072 5.873V85.752h181.876zm-141.18-304.735c40.41 1.86 74.429 36.021 76.58 76.315h-76.58zM127.8 191.053c11.454-.523 25.641-2.616 33.374 8.14c6.629 11.397 6.28 26.398.756 38.143c-6.628 11.977-21.63 10.815-33.2 12.21c-1.22-19.478-1.105-38.956-.93-58.493'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+
+
+
+/*노션*/
+
+.ri--notion-fill {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6.104 5.91c.584.474.802.438 1.898.365l10.332-.62c.22 0 .037-.22-.036-.256l-1.716-1.24c-.329-.255-.767-.548-1.606-.475l-10.005.73c-.364.036-.437.219-.292.365zm.62 2.408v10.87c0 .585.292.803.95.767l11.354-.657c.657-.036.73-.438.73-.913V7.588c0-.474-.182-.73-.584-.693l-11.866.693c-.438.036-.584.255-.584.73m11.21.583c.072.328 0 .657-.33.694l-.547.109v8.025c-.475.256-.913.401-1.278.401c-.584 0-.73-.182-1.168-.729l-3.579-5.618v5.436l1.133.255s0 .656-.914.656l-2.519.146c-.073-.146 0-.51.256-.583l.657-.182v-7.187l-.913-.073c-.073-.329.11-.803.621-.84l2.702-.182l3.724 5.692V9.886l-.95-.109c-.072-.402.22-.693.585-.73zM4.131 3.429l10.406-.766c1.277-.11 1.606-.036 2.41.547l3.321 2.335c.548.401.731.51.731.948v12.805c0 .803-.292 1.277-1.314 1.35l-12.085.73c-.767.036-1.132-.073-1.534-.584L3.62 17.62c-.438-.584-.62-1.021-.62-1.533V4.705c0-.656.292-1.203 1.132-1.276'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+

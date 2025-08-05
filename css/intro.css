@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 
 /*인트로 font*/
 
@@ -61,14 +63,6 @@
     z-index: 3;
 }
 
-#intro_career_Information_bg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    right:-80%;
-    background-color:#F2F2F2;
-}
 
 /*인트로 카테고리 및 메시지 창*/
 

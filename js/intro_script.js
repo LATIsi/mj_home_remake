@@ -6,7 +6,6 @@ $(function(){
         $(this).addClass("on");
 
         t = $(this).index();
-        console.log(t);
 
         if($('.tabmenu>li:nth-child(2)').hasClass('on')){
             $("#intro").css("background-color","#FFC31F");
@@ -18,4 +17,6 @@ $(function(){
         $(".tabcon").eq(t).show();
 
     })
+
+    return false;
 });

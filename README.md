@@ -154,3 +154,8 @@ index.html을 연다
 <a>https://sanghee01.tistory.com/22</a>
 
 <br>
+
+- css 그림자 쉽게 만들어주는 사이트 (Box Shadow Generator)
+<a>https://cssgenerator.pl/en/box-shadow-generator/</a>
+
+<br>
