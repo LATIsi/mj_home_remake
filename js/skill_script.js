@@ -9,8 +9,7 @@ $(function(){
         $(this).addClass("someDiv",{duration:500});
 
         t = $(this).index();
-        console.log("현재 선택한건 : "+t)
-
+        
         color_development = "#7A64FF";
         color_design = "#4FADFF";
         color_office_work = "#FFC31F";

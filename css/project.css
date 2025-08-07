@@ -1,15 +1,243 @@
 @charset "utf-8";
 
 
+
+
+/*프로젝트 font*/
+
+.Righteous-title {
+  color:black;
+}
+
+.category>li{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: #E6E6E6;
+  color:#223440;
+}
+
+li .inter-category-select-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #4FADFF;
+  color:white;
+}
+
+.roboto-capyright{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+}
+
 /*프로젝트 화면*/
 
-#project{
-    background-color: rgb(255, 232, 127);
-    position: relative;
+
+.content_element{
     overflow: hidden;
 }
 
+#project{
+    height: calc(100% - 80px);
+    width: 100%;
+    position: relative;
+}
 
-footer{
+.content_element>ul{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#project>h2{
+    margin: 1.5% 3%;
+    text-align: right;
+}
+
+.category>li{
+    display: block;
+}
+
+
+.project_content{
+    position: relative;
+}
+
+/* 프로젝트 카테고리 */
+
+.category{
+    display: flex;
+    gap: 21px;
+    margin: 1% 2%;
+    padding: 1%;
+}
+
+
+.category>li{
+    padding: 1.7% 1.6%;
+}
+
+.category>li:nth-child(1){
+    margin-left: auto
+}
+
+
+
+/* 프로젝트 카테고리 */
+
+.web_project{
+    position: relative;
+    width: auto;
+    height: 42vh;
+    overflow: visible;
+}
+
+.web_project>ul{
+    position: absolute;
+    top:0;
+    left:0;
+    width: auto;
+    height: 42vh;
     display: none;
 }
+
+.web_project>ul>li{
+    display: block;
+    width: 1200px;
+    height: auto;
+}
+
+.web_project>ul>li:nth-child(2){
+    background-color: rgb(82, 174, 255);
+}
+
+.web_project>ul:nth-child(1){
+    display: flex;
+    background-color:#4FADFF;
+}
+
+.web_project>ul:nth-child(2){
+    background-color:aqua;
+}
+
+.web_project>ul:nth-child(3){
+    background-color:darkkhaki;
+}
+
+.web_project>ul:nth-child(4){
+    background-color:coral;
+}
+/* 왼쪽, 오른쪽 버튼 아이콘 */
+
+
+.icon>ul{
+    position: absolute;
+    width: 130px;
+    height: 42vh;
+    z-index: 10;
+}
+
+
+
+.icon>ul:nth-child(1){
+    top:0;
+    left: 0;
+}
+
+.icon>ul:nth-child(2){
+    top:0;
+    width:100%;
+    background-color: #223440;
+    left: 1200px;
+}
+
+
+.icon>ul>img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 40%;
+    filter: drop-shadow(3px 4px 4px rgba(0,0,0,0.25))
+}
+
+.icon>ul:nth-child(1)>img{
+    left: 25%;
+}
+
+.icon>ul:nth-child(2)>img{
+    left: 5%;
+}
+
+
+/* 왼쪽 보이는 영역 위에 덮가*/
+
+.project_content>div {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  bottom:0px;
+  right:1200px;
+  background-color: white;
+  z-index: 3;
+}
+
+
+/* 프로젝트 목록 버튼 */
+
+
+.select_list {
+    display: flex;
+    gap:25px;
+    margin-right: 5px;
+    padding: 1.5% 2%;
+    justify-content: center;
+}
+
+
+.select_list>li {
+    margin: auto 0;
+    width: 30px;
+    height: 30px;
+    background-color: #E6E6E6;
+    border-radius: 25px;
+}
+
+.select_list>li:nth-child(1) {
+    margin-left: auto;
+}
+
+
+li .select_num {
+    width: 40px;
+    height: 40px;
+    background-color: #4FADFF;
+}
+
+
+
+/* 푸터 영역 */
+
+
+footer{
+    text-align: right;
+    position: absolute;
+    background-color: #F0F0F0;
+    bottom: 0;
+}
+
+
+footer>ul>li>pre{
+    position: relative;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+
+/* 프로젝트 리스트 아이콘 */
+

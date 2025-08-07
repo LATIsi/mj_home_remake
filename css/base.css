@@ -17,9 +17,8 @@
 /* google - Russo One font */
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-
-
-
+/* google - Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 
@@ -54,7 +53,7 @@ button{
 
 .center_all {
  width: 1200px;
- background-color: aqua;
+ background-color: white;
  margin: 0 auto;
 }
 
@@ -148,7 +147,7 @@ header nav ul>li>a:hover{
 .content_element{
     height: calc(100% - 80px);
     width: inherit;
-    background-color: aquamarine;
+    background-color: white;
 }
 
 .content_element>ul {
@@ -160,7 +159,6 @@ header nav ul>li>a:hover{
     height: inherit;
     width: inherit;
     position: relative;
-    background-color: antiquewhite;
 }
 
 
@@ -173,4 +171,27 @@ header nav ul>li>a:hover{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+
+
+
+
+
+
+/* 모바일 메뉴 아이콘 */
+
+.material-symbols--menu-rounded {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+
 
