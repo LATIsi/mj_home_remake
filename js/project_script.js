@@ -1,5 +1,5 @@
 $(function(){
-    let t = 0;
+    let category_num = 0;
     let image_index = 0;
 
     //카테고리 리스트 갯수 수정
@@ -17,25 +17,30 @@ $(function(){
     $(".category>li").click(function(){
 
         list_length = 0;
-        t= 0;
+        category_num = 0 ;
+        image_index = 0;
 
         $(".category>li").removeClass("inter-category-select-bold",{duration:500});  
         $(this).addClass("inter-category-select-bold",{duration:300});
 
-        t = $(this).index();
+        category_num = $(this).index();
+
+        $(".web_project>ul").animate({
+            left : 0
+        },'slow');
 
         // 선택한 카테고리 강조
         $(".skill_contents>li").hide();
-        $(".skill_contents>li").eq(t).show();
+        $(".skill_contents>li").eq(category_num).show();
 
         // 클릭한 카테고리 프로젝트 보이게 하기
         $(".web_project>ul").hide();
-        $(".web_project>ul").eq(t).css("display","flex").show();
+        $(".web_project>ul").eq(category_num).css("display","flex").show();
 
         //카테고리 프로젝트 리스트 갯수 초기화
         $(".select_list>li").detach();
 
-        list_length = $(".web_project>ul:nth-child("+(t+1)+")>li").length;
+        list_length = $(".web_project>ul:nth-child("+(category_num+1)+")>li").length;
 
         //카테고리 프로젝트 리스트 갯수 수정
         for(var i=0; i<list_length;i++){
@@ -63,7 +68,45 @@ $(function(){
     $(".select_list>li").click(click_list);
 
 
+        console.log("image_index 값 : "+image_index);
 
+
+    // 화살표 클릭시 프로젝트 슬라이더 순서 이동
+
+
+    $(".lefticon").click(function(){
+        image_index --;
+        
+        if(image_index-1<0){
+            image_index = list_length;
+        }
+
+        image_slide(image_index);
+    });
+
+    $(".righticon").click(function(){
+        image_index ++;
+
+        if(image_index>list_length-1){
+            image_index = 0;
+        }
+
+        image_slide(image_index);
+    });
+
+
+    // 함수 : image_index의 수만큼(클릭수) 이미지 슬라이드    
+
+    function image_slide(num){
+
+        $(".web_project>ul:nth-child("+(category_num+1)+")").animate({
+            left : -(num*1200)
+        },'slow');
+        
+        console.log("category_num 값 : "+category_num);
+        console.log("image_index 값 : "+num);
+
+    }
 
 
 
@@ -76,10 +119,14 @@ $(function(){
         $(".select_list>li").hide();
         $(".select_list>li").show();
 
+        image_index = $(this).index();
+
+        image_slide(image_index);
+
         return false;
     }
 
-    // 함수 : 버튼 누르면 이미지 슬라이드
+
 
 
 
