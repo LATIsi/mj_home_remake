@@ -2,6 +2,77 @@ $(function(){
     let category_num = 0;
     let image_index = 0;
 
+
+    var web_list_data = [
+        {   
+            id: 1,
+            image1: "1.png",
+            image2: "2.png",
+            image3: "3.png",
+            title_Text: "쇼핑몰 페이지",
+            date: "2025.01~2025.07",
+            team_Member: "인원 : 1명",
+            Contribution: "개발 기여도 100%",
+            description: "2025.01월 ~ 2025.03월 기간동안 인턴IN메타 수업 이수 후 개별적으로 피그마 페이지 수정 및 코드 업데이트 진행",
+            button_Google: null,
+            button_Figma:"https://www.figma.com/design/V1ynLMTAKPJmOJpnw5wySb/portfolio?node-id=0-1&t=ZUuuWrOllxj9VTNN-1",
+            button_Github: "https://github.com/LATIsi/shoes-shopping-mall",
+            button_Page: null,                   
+        },
+        {   
+            id: 2,
+            image1: "1.png",
+            image2: "2.png",
+            image3: "3.png",
+            title_Text: "draw_app",
+            date: "2025.06~2025.07",
+            team_Member: "인원 : 1명",
+            Contribution: "개발 기여도 100%",
+            description: "2022.09월 ~ 2022.10월에 진행한 클론 코딩 프로젝트를 리뉴얼해 모바일 디바이스도 가능한 그림판 웹/앱 브라우저",
+            button_Google: null,
+            button_Figma:"https://www.figma.com/design/V1ynLMTAKPJmOJpnw5wySb/portfolio?node-id=0-1&t=ZUuuWrOllxj9VTNN-1",
+            button_Github: "https://github.com/LATIsi/shoes-shopping-mall",
+            button_Page: null,                   
+        },
+        {   
+            id: 3,
+            image1: "1.png",
+            image2: "2.png",
+            image3: "3.png",
+            title_Text: "todo_list",
+            date: "2025.06~2025.07",
+            team_Member: "인원 : 1명",
+            Contribution: "개발 기여도 100%",
+            description: "2022.09월 ~ 2022.10월에 진행한 클론 코딩 프로젝트를 리뉴얼해 모바일 디바이스도 가능한 투두리스트 웹/앱 브라우저",
+            button_Google: null,
+            button_Figma:"https://www.figma.com/design/V1ynLMTAKPJmOJpnw5wySb/portfolio?node-id=0-1&t=ZUuuWrOllxj9VTNN-1",
+            button_Github: "https://github.com/LATIsi/shoes-shopping-mall",
+            button_Page: null,                   
+        },        
+    ];
+
+
+/* 
+
+    // 해당 카테고리에 배열로 html에 능동적으로 추가하기
+
+    $.each(web_list_data,function(key,value){
+        $(".web_list").append("<li><ul><li>"+value.image1+"</li></ui></li>");
+    });
+
+ */
+
+
+
+
+
+
+
+
+
+    
+
+
     //카테고리 리스트 갯수 수정
     let list_length = $(".web_project>ul:nth-child(1)>li").length;
 
@@ -20,18 +91,18 @@ $(function(){
         category_num = 0 ;
         image_index = 0;
 
-        $(".category>li").removeClass("inter-category-select-bold",{duration:500});  
-        $(this).addClass("inter-category-select-bold",{duration:300});
-
-        category_num = $(this).index();
-
+        // 카테고리 이동시 그 카테고리의 리스트 첫번째부터 보여주기 
         $(".web_project>ul").animate({
             left : 0
         },'slow');
 
         // 선택한 카테고리 강조
-        $(".skill_contents>li").hide();
-        $(".skill_contents>li").eq(category_num).show();
+        $(".category>li").removeClass("inter-category-select-bold",{duration:500});  
+        $(this).addClass("inter-category-select-bold",{duration:300});
+
+        
+        category_num = $(this).index();
+
 
         // 클릭한 카테고리 프로젝트 보이게 하기
         $(".web_project>ul").hide();
@@ -68,20 +139,20 @@ $(function(){
     $(".select_list>li").click(click_list);
 
 
-        console.log("image_index 값 : "+image_index);
-
-
-    // 화살표 클릭시 프로젝트 슬라이더 순서 이동
+    // 화살표 클릭시 프로젝트 슬라이더 순서 이동 
 
 
     $(".lefticon").click(function(){
         image_index --;
-        
-        if(image_index-1<0){
-            image_index = list_length;
+
+        if(image_index<0){
+            image_index = list_length-1;
         }
 
         image_slide(image_index);
+
+        check_list_bigger(image_index);
+
     });
 
     $(".righticon").click(function(){
@@ -92,32 +163,33 @@ $(function(){
         }
 
         image_slide(image_index);
+
+        check_list_bigger(image_index);
     });
+
+
+
+
+
+
+
 
 
     // 함수 : image_index의 수만큼(클릭수) 이미지 슬라이드    
 
     function image_slide(num){
-
         $(".web_project>ul:nth-child("+(category_num+1)+")").animate({
             left : -(num*1200)
-        },'slow');
-        
-        console.log("category_num 값 : "+category_num);
-        console.log("image_index 값 : "+num);
+        });
 
     }
 
 
-
-    // 함수 : 프로젝트 리스트에서 현재 클릭한 요소 크게 하기
+    // 함수 : 프로젝트 리스트에서 현재 클릭한 요소 크게 하기 & 슬라이드 이동
 
     function click_list(){
         $(".select_list>li").removeClass("select_num",{duration:500});  
         $(this).addClass("select_num",{duration:300});
-
-        $(".select_list>li").hide();
-        $(".select_list>li").show();
 
         image_index = $(this).index();
 
@@ -125,6 +197,16 @@ $(function(){
 
         return false;
     }
+
+
+    // 함수 : 화살표 클릭시 해당 리스트 요소 크게해주기
+    
+    function check_list_bigger(num){
+        $(".select_list>li").removeClass("select_num",{duration:500});  
+        $(".select_list>li").eq(num).addClass("select_num",{duration:300});
+    }
+
+
 
 
 
