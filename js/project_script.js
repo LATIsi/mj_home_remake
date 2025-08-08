@@ -1,6 +1,7 @@
 $(function(){
     let category_num = 0;
     let image_index = 0;
+    let popup_image = null;
 
 
     var web_list_data = [
@@ -170,7 +171,24 @@ $(function(){
 
 
 
+    // 이미지 클릭시 팝업 뜨게 하기
 
+    $(".project_sub_image>img").click(function(){
+        
+        popup_image = $(this).attr("src");
+
+        console.log("popup_image 경로는 "+popup_image);
+    
+        $(".popup").show();
+
+        $(".popup>img").attr('src', popup_image);
+        
+        $(".popup").click(function(){
+             $(".popup").hide();           
+        });
+
+        popup_image = null;
+    });
 
 
 

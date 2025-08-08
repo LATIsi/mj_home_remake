@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-
-
-
 /*프로젝트 font*/
 
 .Righteous-title {
@@ -123,11 +120,6 @@ li .inter-category-select-bold {
     text-align: right;
 }
 
-.category>li{
-    display: block;
-}
-
-
 .project_content{
     position: relative;
     height: 45vh;
@@ -144,6 +136,7 @@ li .inter-category-select-bold {
 
 
 .category>li{
+    display: block;
     padding: 1rem;
 }
 
@@ -442,4 +435,33 @@ footer>ul>li>pre{
     position: relative;
     margin-right: 20px;
     z-index: 3;
+}
+
+
+
+
+
+/* 팝업 디자인 */
+
+.popup{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 30;
+    top:0;
+    left:0;
+    display: none;
+}
+
+
+.popup>img{
+    position: absolute;
+    width:auto;
+    height:80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat : no-repeat;
+    background-position : center center;
 }
