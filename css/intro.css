@@ -53,12 +53,12 @@
 }
 
 #intro_career_Information{
-    width:75%;
+    width:65%;
     margin: 2% 0px 0px 5%;
 }
 
 #intro_minji_Information{
-    width: 25%;
+    width: 35%;
     background-color:#F2F2F2;
     z-index: 3;
 }
@@ -109,7 +109,7 @@
 /* 경력/학력 관련 태그 */
 
 .careerlist{
-    width: 90%;
+    width: 80%;
     padding-bottom: 1%;
     margin: 0px 20px 20px 0;
     height: 55vh;
@@ -187,8 +187,8 @@
   position: absolute;
   align-items: center;
   text-align: center;
-  padding: 20vh 50px;
-  width: 100%;
+  padding: 20vh 2vw;
+  width: 80%;
   height: 100%;
   margin: auto 0;
   display: block;

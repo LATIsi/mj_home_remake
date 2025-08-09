@@ -23,7 +23,7 @@ $(function(){
         },
         {   
             id: 2,
-            image1: "1_web_mobile/1.jpg",
+            image1: "1_web_mobile/2.jpg",
             image2: "1_web_mobile/2.jpg",
             image3: "1_web_mobile/3.jpg",
             title_Text: "draw_app",

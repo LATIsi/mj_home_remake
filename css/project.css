@@ -171,27 +171,9 @@ li .inter-category-select-bold {
     height: auto;
 }
 
-.web_project>ul>li:nth-child(2){
-    background-color: rgb(82, 174, 255);
-}
-
 .web_project>ul:nth-child(1){
     display: flex;
-    background-color:#4FADFF;
 }
-
-.web_project>ul:nth-child(2){
-    background-color:aqua;
-}
-
-.web_project>ul:nth-child(3){
-    background-color:darkkhaki;
-}
-
-.web_project>ul:nth-child(4){
-    background-color:coral;
-}
-
 
 /* 왼쪽, 오른쪽 버튼 아이콘 */
 
@@ -213,8 +195,9 @@ li .inter-category-select-bold {
 .icon>ul:nth-child(2){
     top:0;
     width:100%;
-    background-color: #223440;
+    background-color: rgba(46, 45, 100, 0.3);
     left: 1200px;
+    backdrop-filter:blur(10px);
 }
 
 
@@ -231,7 +214,7 @@ li .inter-category-select-bold {
 }
 
 .icon>ul:nth-child(2)>img{
-    left: 5%;
+    left: 1vw;
 }
 
 

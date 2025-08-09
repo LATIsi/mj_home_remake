@@ -33,7 +33,7 @@
 #home ul>li:nth-child(1){
     margin-top: 30vh;
     position: relative;
-    font-size: 96px;
+    font-size: 6rem;
     color:white;
     z-index: 4;
 }

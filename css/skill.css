@@ -97,6 +97,10 @@
 
 /* 스킬 콘텐츠 노출 */
 
+.skill_contents{
+    width: 1100px;
+    margin: 0 auto;
+}
 
 .skill_contents>li{
     display: none;
@@ -146,8 +150,8 @@
     height: auto;
     display: flex;
     gap: 8% 10px;
-    margin: 0px 20px;
-    padding: 15px 20px;
+    margin: 0px 20px 0px 0px;
+    padding: 15px 20px 10px 0px;
 }
 
 .skill_list>ul>li:last-child{
