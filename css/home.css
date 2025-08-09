@@ -83,7 +83,6 @@
 }
 
 #home_background{
-    background-image:url(../image/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
     z-index: 2;
     object-fit:cover;
     width: 100%;
