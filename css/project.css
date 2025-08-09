@@ -60,8 +60,9 @@ li .inter-category-select-bold {
   font-style: normal;
   color:white;
   font-size: 0.8rem;
-  gap:10px;
+  gap: 10px;
   display: flex;
+  margin-right:-10px;
 }
 
 
@@ -306,7 +307,7 @@ li .select_num {
 
 .contexnt_grop>li:nth-child(2){
     background-color: white;
-    width: max-content;
+    width: 490px;
     height: 43vh;
     padding: 1vh 50px;
     gap:5px;
@@ -335,7 +336,7 @@ li .select_num {
 }
 
 .content_script>li:nth-child(5) , .content_script>li:nth-child(6) , .content_script>li:nth-child(7){
-    margin: 0.7%;
+    margin: 0.7% 0; 
 }
 
 .semi_desc{
@@ -344,42 +345,52 @@ li .select_num {
    height: 50px;
 }
 
+.semi_desc>p {
+   margin: auto 0;
+   line-height:1.4rem;
+   overflow-wrap: break-word;
+}
+
  .content_script>li:nth-child(6){
    flex-grow: 0.2;
  }
 
-
-.semi_desc>p {
-   margin: auto 0;
-}
-
-.Righteous-project-content-buttons>li{
-    padding: 10px 15px;
+.Righteous-project-content-buttons>li>a{
+    display: block;
+    padding: 7px 15px;
     border-radius: 15px;
     color:white;
     
 }
+
+.Righteous-project-content-buttons>li>a[href="#"]{
+    display: none;
+}
+
 
 
 /* 링크 이동 버튼 색 */
 
 .Righteous-project-content-buttons>li:nth-child(1){
     margin-left: auto;
+}
+
+.Righteous-project-content-buttons>li:nth-child(1)>a{
     background-color: #EA4335;
 }
 
 
-.Righteous-project-content-buttons>li:nth-child(2){
+.Righteous-project-content-buttons>li:nth-child(2)>a{
     background-color: #7A64FF;
 }
 
 
-.Righteous-project-content-buttons>li:nth-child(3){
+.Righteous-project-content-buttons>li:nth-child(3)>a{
     background-color: #24292F;
 }
 
 
-.Righteous-project-content-buttons>li:nth-child(4){
+.Righteous-project-content-buttons>li:nth-child(4)>a{
     background-color: #ff9c1b;
 }
 
