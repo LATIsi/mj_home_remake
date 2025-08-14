@@ -79,7 +79,7 @@ img{
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.8rem;
     font-style: normal;
 }
 
@@ -173,11 +173,6 @@ header nav ul>li>a:hover{
 }
 
 
-
-
-
-
-
 /* 모바일 메뉴 아이콘 */
 
 .material-symbols--menu-rounded {
@@ -190,7 +185,53 @@ header nav ul>li>a:hover{
 }
 
 
+@media all and (max-width:480px) {
 
+    header nav{
+        display: block;
+        position:relative;
+        width: fit-content;
+        height: fit-content;
+        text-align: right;
+        line-height : 55px;
+        z-index: 20;
+    }
+
+    header>nav>h1{
+        height: 55px;
+        width: 200px;
+        display: none;
+    }
+
+    header nav ul{
+        background-color: white;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    header nav ul>li>a{
+        height: 55px;
+        width: 200px;
+        display: block;
+        padding: 15px 40px;
+    }
+
+
+    .content_element{
+        height: 100%;
+        width: inherit;
+        background-color: white;
+    }
+
+
+
+
+
+
+
+  
+}
 
 
 

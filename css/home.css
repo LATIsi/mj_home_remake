@@ -53,11 +53,20 @@
 /* 홈 메인 텍스트 2 */
 
 #home ul>li:nth-child(3){
+    width: 50vw;
     position: relative;
-    font-size: 64px;
+    font-size: 4rem;
     color:white;
     z-index: 4;
+    margin-right: 30px;
+    word-break: keep-all;
 }
+
+.break-m{
+    display: none;
+}
+
+
 
 
 /* 홈 배경 이미지 */
@@ -92,3 +101,39 @@
     background-repeat: no-repeat;
 }
 
+
+@media all and (max-width:480px) {
+
+
+    #home ul{
+        width: 90vw;
+        height: 40vh;
+        margin: auto 5vw;
+        text-align: right;  
+    }
+
+    #home ul>li:nth-child(1){
+        word-break: keep-all;
+        margin-top: 50vh;
+        font-size: 4rem;
+        color:white;
+        z-index: 4;
+    }
+
+    #home ul>li:nth-child(2){
+        margin: 2.5% 0;
+    }
+    
+    #home ul>li:nth-child(3){
+        width: 100%;
+        position: relative;
+        font-size: 1.8rem;
+        z-index: 4;
+        margin-left: auto;
+        word-break:normal;
+    }
+
+    .break-m{
+        display: block;
+    }
+}

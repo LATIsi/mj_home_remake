@@ -307,15 +307,12 @@ li .select_num {
 
 .content_script>li:nth-child(3){
     color: #929292;
+    padding-bottom: 3px;
 }
 
 
 .content_script>li:nth-child(3)>span:nth-child(1)::after{
     content: " / ";
-}
-
-.content_script>li:nth-child(4)>hr{
-    margin: 0.3%;
 }
 
 .content_script>li:nth-child(5) , .content_script>li:nth-child(6) , .content_script>li:nth-child(7){
@@ -346,7 +343,7 @@ li .select_num {
     
 }
 
-.Righteous-project-content-buttons>li>a[href="#"]{
+.Righteous-project-content-buttons>li:has(a[href="#"]){
     display: none;
 }
 
@@ -354,7 +351,7 @@ li .select_num {
 
 /* 링크 이동 버튼 색 */
 
-.Righteous-project-content-buttons>li:nth-child(1){
+.Righteous-project-content-buttons>li:nth-child(1),.Righteous-project-content-buttons>li:nth-child(2){
     margin-left: auto;
 }
 
