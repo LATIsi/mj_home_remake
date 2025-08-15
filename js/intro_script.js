@@ -1,5 +1,4 @@
 $(function(){
-    let t = 0;
 
     $(".tabmenu>li").click(function(){
         $(".tabmenu>li").removeClass("on");

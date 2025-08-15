@@ -52,9 +52,9 @@ button{
 }
 
 .center_all {
- width: 1200px;
- background-color: white;
- margin: 0 auto;
+    width: 1200px;
+    background-color: white;
+    margin: 0 auto;
 }
 
 img{
@@ -116,21 +116,21 @@ header>nav>h1{
     width: 345px;
 }
 
-header nav ul{
+header>nav>ul{
     position: absolute;
     right: 0px;
     display: flex;
     margin: auto;
 }
 
-header nav ul>li>a{
+header>nav>ul>li>a{
     width: 150px;
     height: 45px;
     display: block;
     margin: auto 0 ;
 }
 
-header nav ul>li>a:hover{
+header>nav>ul>li>a:hover{
     color: #FFC31F;
 }
 
@@ -175,62 +175,75 @@ header nav ul>li>a:hover{
 
 /* 모바일 메뉴 아이콘 */
 
-.material-symbols--menu-rounded {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z'/%3E%3C/svg%3E");
+.menu_mobile{
+    display: none;
 }
 
 
-@media all and (max-width:480px) {
 
-    header nav{
-        display: block;
-        position:relative;
-        width: fit-content;
-        height: fit-content;
-        text-align: right;
-        line-height : 55px;
-        z-index: 20;
+@media all and (max-width:1200px) {
+
+    .center_all {
+        width: 100%;
     }
-
-    header>nav>h1{
-        height: 55px;
-        width: 200px;
-        display: none;
-    }
-
-    header nav ul{
-        background-color: white;
-        display: block;
-        margin: auto;
-        border-radius: 20px;
-    }
-
-    header nav ul>li>a{
-        height: 55px;
-        width: 200px;
-        display: block;
-        padding: 15px 40px;
-    }
-
 
     .content_element{
         height: 100%;
-        width: inherit;
-        background-color: white;
+        width: 100%;
+        background-color: none;
     }
 
+    header>nav{
+        position:fixed;
+        top:0;
+        left: 0;
+        display:block;
+        text-align: right;
+        line-height : 55px;
+        z-index: 20;
+        background-color: none;
+        display: none;
+    }
 
+     header>nav>ul{
+        position: absolute;
+        display: block;
+        top: 3rem;
+        left: 50%;
+        width: max-content;
+        height: max-content;
+        background-color: white;
+        border-radius: 20px;
+        margin : 0 10vw 0 calc(10vw - 1rem);
+        padding: 1rem;
+    }
 
+    .roboto-header-logo{
+        display: none;
+    }
 
+    header>nav>ul>li>a{
+        width: calc(80vw - 2rem);
+        height: 45px;
+        display: block;
+        margin: 1rem 0;
+        margin-right: 2rem;
+    }
 
+    .menu_mobile{
+        display: block;        
+        position: fixed;
+        top:2rem;
+        right:5vw;
+        width: 4rem;
+        height: 4rem;
+        z-index: 1000;
+    }
 
+    header>nav.show {
+	    display: block;
+    }
 
-  
 }
 
 
