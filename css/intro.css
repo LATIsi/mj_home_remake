@@ -110,7 +110,7 @@
 
 .careerlist{
     width: 80%;
-    padding-bottom: 1%;
+    padding-bottom: 1.5vh;
     margin: 0px 20px 20px 0;
     height: 55vh;
     background-color: white;
@@ -262,27 +262,30 @@
 
 
 @media all and (max-width:1200px) {
+
+
   #intro>ul{
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     width: 100vw;
+    height: fit-content;
   }
 
   #intro_minji_Information{
     width: 100vw;
-    height: 45vh;
+    height: 38vh;
     background-color: transparent;
   }
   
   #intro_minji_Information>ul{
     width: 100vw;
     height: max-content;
-    padding: 1vh 2vw;
+    padding: 1vh 0;
   }
 
     #intro_minji_Information>ul>li:nth-child(5){
     border-radius: 0 0 3rem 3rem ;
-    width: 100vw;
-    padding: 0.5rem;
+    width: 98vw;
+    padding: 1vh 1vw 0 1vw;
   }
 
    #intro_minji_image{
@@ -291,16 +294,22 @@
   }
 
   #intro_minji_Information>ul>li:nth-child(3){
-    justify-content: center;
-    margin: 0;
+    width: fit-content;
+    margin: -10px auto -5px auto;
+    border-bottom: 2px solid #C8C8C8;
   }
 
   #intro_career_Information{
-    height: calc(100vh - 43vh);
+    max-height: calc(100vh - 40vh);
     width: calc(100vw - 2rem);
-    bottom:0;
-    position: absolute;
-    right:1rem;
+    position: relative;
+    margin: 0 1rem;
+  }
+
+  .mdi--github {
+    width: 36px;
+    height: 36px;
+    margin-right: 5px;
   }
 
   .Righteous-title{
@@ -321,14 +330,133 @@
     border-radius: 0;
   }
 
-  .careerlist {
-    height: calc(100vh - 51.5vh);
+  .noto-sans-kr-careerTag {
+    font-size: 1rem;
+  }
+
+  .careerlist>li>p{
+      font-size: 2rem;
+  }
+
+  .russo-one-regular-minji-name {
+    font-size: 2rem;
+  }
+
+  .noto-sans-kr-minji-text {
+    font-size: 1rem;
+  }
+
+  li.noto-sans-kr-minji-text {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .careerlist>li{
+    padding: 10px 5px 0px 20px;
+  }
+
+  .careerlist>li>p{
+    font-size: 2rem;
+  }
+
+  .careerlist>li>div{
+    padding: 1rem;
+    font-size: 1rem;
   }
 
 }
 
-@media all and (max-width:480px) {
+@media all and (max-width:560px) {
+  
+  .noto-sans-kr-careerTag {
+    font-size: 1rem;
+  }
 
+  .careerlist>li>p{
+      font-size: 2rem;
+  }
+
+  .russo-one-regular-minji-name {
+    font-size: 2rem;
+  }
+
+  .noto-sans-kr-minji-text {
+    font-size: 1rem;
+  }
+
+  #intro_minji_Information{
+    height: 40vh;
+  }
+
+  .careerlist {
+    height: calc(100vh - 47.5vh);
+  }
+
+  #intro_minji_Information>ul>li:nth-child(5) {
+    border-radius: 0 0 3rem 3rem;
+    width: 100vw;
+    padding: 0.2rem 0;
+  }
+
+  #intro_minji_image{
+    width: 100px;
+    height: 100px;
+    border: solid white 3px;
+  }
+
+  .careerlist>li>div{
+    font-size: 0.9rem;
+    word-break: break-all;
+  }
+
+  .careerlist>li {
+        padding-left: 15px;
+  }
+
+  .careerlist>li>p{
+    margin: -3px 0px;
+  }
+}
+
+@media all and (max-width:390px) {
+  .careerlist>li>p{
+    font-size: 1.6rem;
+  }
+  
+  .careerlist>li>div{
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+}
+
+@media all and (max-height:780px) {
+    #intro_minji_Information {
+        height: 43vh;
+    }
+
+    .careerlist {
+      height: calc(100vh - 53vh);
+      padding-bottom: 10px;
+    }
+}
+
+@media all and (max-height:600px) {
+    #intro_minji_Information {
+        height: 30vh;
+    }
+
+    #intro_minji_image{
+      display: none;
+    }
+
+    .russo-one-regular-minji-name{
+      margin-top: 10px;
+    }
+
+    .careerlist {
+      height: calc(100vh - 41vh);
+      padding-bottom: 10px;
+    }
 }
 
 
