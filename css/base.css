@@ -235,7 +235,7 @@ header>nav>ul>li>a:hover{
     .menu_mobile{
         display: block;        
         position: fixed;
-        top:2rem;
+        top:3dvh;
         right:5vw;
         width: 4rem;
         height: 4rem;

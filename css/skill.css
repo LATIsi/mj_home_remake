@@ -43,6 +43,7 @@
 /*스킬 화면*/
 
 #skill{
+    height: inherit;
     position: relative;
     background-color: #7A64FF;
 }
@@ -50,7 +51,7 @@
 #skill>ul{
     position: relative;
     margin: 0 auto;
-    padding: 1.5% 0 0 0;
+    padding: 5dvh 0  0;
     width: 1200px;
     display: block;
     text-align: center;
@@ -154,8 +155,12 @@
     padding: 15px 20px 10px 0px;
 }
 
+.skill_list>ul>li:first-child{
+    padding-top:3dvh;
+}
+
 .skill_list>ul>li:last-child{
-    padding-bottom:40px;
+    padding-bottom:3dvh;
 }
 
 /* 스킬 리스트 */
@@ -163,8 +168,8 @@
 
 
 .skill_list>ul>li>img{
-    width: 70px;
-    height: 70px;
+    width: 4.5rem;
+    height: 4.5rem;
     padding: 0;
     margin: 10px 15px 0px 10px;
     align-items: center;
@@ -327,14 +332,15 @@ https://stackoverflow.com/questions/9730612/get-element-css-property-width-heigh
     display: block;
     height: auto;
     width: 15px;
-    margin: 10px 20px 0 20px;
+    margin: 10px 15px 0 20px;
 }
 
 .skill_description_descript>p{
     padding:20px 5px 15xp 5px;
-    width: 100%;
+    width: 440px;
     height: auto;
     margin: auto 0 ;
+    word-break: keep-all;
 }
 
 
@@ -569,8 +575,10 @@ https://stackoverflow.com/questions/9730612/get-element-css-property-width-heigh
 @media all and (max-width:1200px) {
 
     #skill>ul {
-        width: 100vw;
-        padding-top:10vh ;
+        width: auto;
+        height:fit-content;
+        padding-top:8dvh ;
+        
     }
 
     #skill>ul>li {
@@ -581,42 +589,190 @@ https://stackoverflow.com/questions/9730612/get-element-css-property-width-heigh
         display: flex;
         justify-content: center;
         gap: 30px;
-        height: 2rem;
-        margin-top: 2vh;
-        padding: 1.5rem;
+        height: 40px;
+        margin-top: 0;
+        padding: 2dvh;
     }
 
+    .skill_button .skill_set{
+        width: 40px;
+        height: 40px;
+        margin: auto 0;
+        background-color: white;
+    }
+    
     .skill_contents{
-        width: 90vw;
+        width: 90dvw;
         margin: 0 auto;
+
     }
 
     .skill_tag{
         margin: 0 auto;
     }
+
+    .Righteous-title{
+        font-size: 2.5rem;
+        padding: 2dvh 10vw;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .skill_list{
+        max-height: 62dvh;
+        min-height: 56dvh;
+        margin-bottom: 30px;
+        padding:0px 5dvw 20px 5dvw;
+    }
+
+    .skill_list>ul>li{
+        flex-wrap: wrap;
+        gap:0;
+        margin: 0;
+        padding:0;
+        border-bottom: #e7e7e7 2px solid;
+        margin-bottom: 1.5rem;
+    }
+
+    .skill_list>ul>li:last-child{
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .skill_list>ul>li>img {
+        margin: 0;
+        width: 100px;
+        object-fit: cover;
+        display: block;
+        margin-left: -5px;
+    }
+
+    .skill_description_main{
+        width:  calc(90dvw - 100px - 10dvw);
+    }
+
+    .skill_title_text{
+        margin: -1rem;
+    }
+
+    .skill_description_main>ul, .skill_title_text>span{
+        padding-left: 1dvw;
+        padding-right: 2dvw;
+    }
+
+
+    .skill_title_gauge{
+        padding:0;
+        width: calc(100% - 2dvw);
+        height: 20px;
+    }
+
+
+    .skill_description_descript>span{
+        display: none;
+    }
+
+    .roboto-skill-description{
+        font-size: 1rem;
+        padding:1rem 1rem;
+    }
+
+    .show_on{
+        display: none;
+    }
+
+    .skill_description_descript>p{
+        width:calc(100%);
+    }
+
+
 }
 
-@media all and (max-width:560px) {
+@media all and (max-width:520px) {
 
-}
+    .skill_list>ul>li>img {
+        width: 62px;
+        margin:0.5rem;
+        object-fit: cover;
+        display: block;
+        margin-bottom: -0.2rem;
+    }
 
-@media all and (max-width:390px) {
-      .Righteous-title{
+    .Righteous-title{
+        font-size: 2.3rem;
+        padding: 1dvh 10vw;
+    }
+
+    .skill_title_text>span:nth-child(1) {
         font-size: 1.8rem;
-        padding: 4vh 10vw;
-        margin-left: 5vw;
+        width: 80%;
         text-align: left;
     }
+
+    .skill_title_text>span:nth-child(2) {
+        font-size: 2rem;
+        width: 20%;
+    }
+
+    .skill_description_main>ul, .skill_title_text>span{
+        padding-left: 3dvw;
+    }
+
+    .skill_title_text{
+        margin-top: -0.2rem;
+    }
+
+    .skill_title_gauge{
+        margin-bottom: 0.3rem;
+    }
+
+    .roboto-skill-description{
+        font-size: 1rem;
+        padding:1rem 2.5dvw;
+    }
+
+    .skill_description_descript>p{
+        width:calc(100% - 5dvw);
+    }
+
+
 }
 
-@media all and (max-height:780px) and (max-width:1200px) {
-   
+@media all and (max-width:430px) and (max-width:1200px) {
+        
+
+        .skill_list>ul>li>img {
+            width: 62px;
+            object-fit: cover;
+            display: block;
+        }
+        .skill_title_text>span:nth-child(1) {
+            font-size: 1.6rem;
+            width: 80%;
+            text-align: left;
+        }
+
+        .skill_title_text>span:nth-child(2) {
+            font-size: 1.8rem;
+            
+            width: 20%;
+        }
+
+        .skill_title_text{
+            margin-top: -0.4rem;
+        }
+
+        .skill_title_gauge{
+            margin-bottom: 0.8rem;
+            height: 15px;
+        }
 }
 
-@media all and (max-height:600px) {
-   
+@media all and (max-height:780px) {
+    #skill>ul {
+        padding-top: 3dvh;
+    }
 }
-
 
 
 
