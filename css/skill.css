@@ -636,7 +636,7 @@ https://stackoverflow.com/questions/9730612/get-element-css-property-width-heigh
 
     .skill_list>ul>li:last-child{
         border-bottom: none;
-        margin-bottom: 0;
+        margin-bottom: 1.5rem;
     }
 
     .skill_list>ul>li>img {
@@ -770,7 +770,10 @@ https://stackoverflow.com/questions/9730612/get-element-css-property-width-heigh
 
 @media all and (max-height:780px) {
     #skill>ul {
-        padding-top: 3dvh;
+        padding-top: 5dvh;
+    }
+    .Righteous-title{
+        padding: 1dvh 15vw;
     }
 }
 
