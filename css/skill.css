@@ -561,3 +561,62 @@ https://stackoverflow.com/questions/9730612/get-element-css-property-width-heigh
 
 
 
+/* 태블릿 및 모바일*/
+
+
+
+
+@media all and (max-width:1200px) {
+
+    #skill>ul {
+        width: 100vw;
+        padding-top:10vh ;
+    }
+
+    #skill>ul>li {
+        margin-left: 0;
+    }
+
+    .skill_button {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        height: 2rem;
+        margin-top: 2vh;
+        padding: 1.5rem;
+    }
+
+    .skill_contents{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .skill_tag{
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width:560px) {
+
+}
+
+@media all and (max-width:390px) {
+      .Righteous-title{
+        font-size: 1.8rem;
+        padding: 4vh 10vw;
+        margin-left: 5vw;
+        text-align: left;
+    }
+}
+
+@media all and (max-height:780px) and (max-width:1200px) {
+   
+}
+
+@media all and (max-height:600px) {
+   
+}
+
+
+
+

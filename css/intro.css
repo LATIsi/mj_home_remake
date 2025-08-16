@@ -47,7 +47,7 @@
 #intro>ul{
     margin: auto;
     width: 1200px;
-    height: 100%;
+    height: inherit;
     display: block;
     display: flex;
 }
@@ -271,7 +271,7 @@
 
   #intro_minji_Information{
     width: 100vw;
-    height: 38vh;
+    height: 38dvh;
     background-color: transparent;
     filter: drop-shadow(0px 3px 4px rgba(0,0,0,0.25))
   }
@@ -300,7 +300,7 @@
   }
 
   #intro_career_Information{
-    max-height: calc(100vh - 40vh);
+    max-height: calc(100dvh - 40dvh);
     width: calc(100vw - 2rem);
     position: relative;
     margin: 0 1rem;
@@ -385,11 +385,11 @@
   }
 
   #intro_minji_Information{
-    height: 40vh;
+    height: 32dvh;
   }
 
   .careerlist {
-    height: calc(100vh - 47.5vh);
+    height: calc(100dvh - 39dvh);
   }
 
   #intro_minji_Information>ul>li:nth-child(5) {
@@ -437,18 +437,18 @@
 
 @media all and (max-height:780px) and (max-width:1200px) {
     #intro_minji_Information {
-        height: 43vh;
+        height: 43dvh;
     }
 
     .careerlist {
-      height: calc(100vh - 51.5vh);
+      height: calc(100dvh - 51.5dvh);
       padding-bottom: 10px;
     }
 }
 
 @media all and (max-height:600px) {
     #intro_minji_Information {
-        height: 30vh;
+        height: 30dvh;
     }
 
     #intro_minji_image{
@@ -460,7 +460,7 @@
     }
 
     .careerlist {
-      height: calc(100vh - 41vh);
+      height: calc(100dvh - 41dvh);
       padding-bottom: 10px;
     }
 }

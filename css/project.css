@@ -79,22 +79,6 @@ li .inter-category-select-bold {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*프로젝트 화면*/
 
 
@@ -456,3 +440,35 @@ footer>ul>li>pre{
     background-repeat : no-repeat;
     background-position : center center;
 }
+
+
+
+
+
+
+/* 태블릿 및 모바일*/
+
+
+
+
+@media all and (max-width:1200px) {
+
+}
+
+@media all and (max-width:560px) {
+
+
+}
+
+@media all and (max-width:390px) {
+
+}
+
+@media all and (max-height:780px) and (max-width:1200px) {
+
+}
+
+@media all and (max-height:600px) {
+
+}
+
