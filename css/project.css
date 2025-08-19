@@ -423,7 +423,7 @@ footer>ul>li>p{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
-    z-index: 30;
+    z-index: 30000;
     top:0;
     left:0;
     display: none;
@@ -448,6 +448,34 @@ footer>ul>li>p{
 
 /* 태블릿 및 모바일*/
 
+@media all and (max-width:1500px) {
+    
+    .icon>ul {
+        position:absolute;
+        margin-top: 43dvh;
+        width: 130px;
+        height: 50px;
+        z-index: 10;
+    }
+
+    .icon>ul:nth-child(2) {
+        top: 0;
+        width: 100%;
+        background-color:transparent;
+        left: 1080px;
+        backdrop-filter: none;
+    }
+    .select_list {
+        margin-right: 0;
+    }
+    .select_list>li:nth-child(1) {
+        margin-left: 5dvw;
+    }
+
+    .web_project {
+        overflow: hidden;
+    }
+}
 
 
 
@@ -499,10 +527,100 @@ footer>ul>li>p{
         z-index: 3;
         text-align: right;
     }
+
+    .project_content {
+        height: 58dvh;
+    }
+
+    .web_project {
+        position: relative;
+        width: auto;
+        height: 58dvh;
+        filter: drop-shadow(3px 4px 4px rgba(0,0,0,0.25))
+    }
+
+    .web_project>ul{
+        height: 58dvh;
+    }
+
+    .web_project>ul>li{
+        width: 100dvw;
+    }
+
+    .contexnt_grop>li:nth-child(1)>img {
+        width: 40dvw;
+        height: 58vh;
+        object-fit: cover;
+        overflow: hidden;
+        object-position: 50% 50%;
+        filter: brightness(95%);
+    }
+
+    .contexnt_grop>li:nth-child(2) {
+        background-color: white;
+        height: 58vh;
+        width: 60dvw;;
+        padding: 1vh 50px;
+    }
+
+    .select_list {
+        gap: 2dvw;
+    }
+
+    .icon>ul {
+        position:fixed;
+        margin-top: calc(58dvh + 5.7rem + 8dvh);
+        width: 130px;
+        height: 50px;
+        z-index: 10;
+    }
+
+    .icon>ul:nth-child(1) {
+        top: 0;
+        width: auto;
+        background-color:transparent;
+        left: 10dvw;
+        backdrop-filter: none;
+    }
+
+    .icon>ul:nth-child(2) {
+        top: 0;
+        width: auto;
+        background-color:transparent;
+        right: calc(10dvw + 70px);
+        left: unset;
+        backdrop-filter: none;
+    }
+    .select_list {
+        margin-top: 2dvh;
+        margin-right: 0;
+    }
+    .select_list>li:nth-child(1) {
+        margin-left: 5dvw;
+    }
+
+    .icon>ul:nth-child(1)>img , .icon>ul:nth-child(2)>img{
+        left: 0;
+    }
+
+    .popup>img{
+        max-width:80dvw;
+        height:auto;
+        max-height: 80dvh;
+    }
+
+
+    .semi_desc {
+        padding: 0.5% 0;
+        flex-grow: 0.6;
+        height: 50px;
+    }
+
 }
 
-@media all and (max-width:560px) {
 
+@media all and (max-width:700px) {
+    
     .category {
         gap:1.1dvh;
     }
@@ -517,15 +635,81 @@ footer>ul>li>p{
 
 }
 
-@media all and (max-width:390px) {
 
+@media all and (max-width:580px) {
+    
+    .contexnt_grop{
+        display: block;
+    }
+
+    .contexnt_grop>li:nth-child(1)>img {
+        width: 100dvw;
+        height: 28dvh;
+        object-position: 50% 20%;
+    }
+
+    .contexnt_grop>li:nth-child(2) {
+        background-color: white;
+        height: 41dvh;
+        width: 100dvw;
+        z-index: 10;
+        position: absolute;
+        top:15dvh;
+        padding: 1dvh 0;
+    }
+
+    .content_script{
+        padding: 0px 10dvw;
+    }
+
+
+    .select_list {
+        gap: 5dvw;
+        margin-top: 1dvh;
+    }
+
+    .roboto-project-content-title {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 2.4rem;
+        font-style: normal;
+    }
+
+
+    .roboto-project-content-date {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 1.2rem;
+        font-style: normal;
+    }
+
+
+    .roboto-project-content-description {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 0.8rem;
+        font-style: normal;
+    }
+
+    .semi_desc>p {
+        margin: auto 0;
+        line-height: 1.2rem;
+        overflow-wrap: break-word;
+    }
+
+    .select_list>li {
+        margin: auto 0;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    li .select_num {
+        width: 2rem;
+        height: 2rem;
+        background-color: #4FADFF;
+    }
+ 
 }
-
-@media all and (max-height:780px) and (max-width:1200px) {
-
-}
-
-@media all and (max-height:600px) {
-
-}
-

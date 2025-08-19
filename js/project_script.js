@@ -4,6 +4,7 @@ $(function(){
     let popup_image = null;
     let js_set_list = "web_list_data";
     let html_set_list = null;
+    let resize_window_slider = 0;
 
     var web_list_data = [
         {   
@@ -261,16 +262,23 @@ $(function(){
 
     $(".project_sub_image>img").click(img_popup);
 
+        $(window).resize(function(){ 
+            if (window.innerWidth > 1200) {  // 현재 띄워진 창 크기가 640px 이상일때
+                resize_window_slider = 1200;
+            } else{
+                 /* 560 이상일때의 스크립트 */
+                resize_window_slider = window.innerWidth;
+            }
 
-
+        }).resize();
 
     // 함수 : image_index의 수만큼(클릭수) 이미지 슬라이드    
 
     function image_slide(num){
-        $(".web_project>ul:nth-child("+(category_num+1)+")").animate({
-            left : -(num*1200)
-        });
 
+        $(".web_project>ul:nth-child("+(category_num+1)+")").animate({
+            left : -(num*resize_window_slider)
+        });
     }
 
     
@@ -280,7 +288,6 @@ $(function(){
         
         popup_image = $(this).attr("src");
 
-        console.log("popup_image 경로는 "+popup_image);
     
         $(".popup").show();
 
