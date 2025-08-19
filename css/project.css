@@ -71,7 +71,7 @@ li .inter-category-select-bold {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     font-style: normal;
 }
 
@@ -390,7 +390,7 @@ li .select_num {
 footer{
     text-align: right;
     position: fixed;
-    width: 100vw;
+    width: 100dvw;
     height: 8vh;
     background-color: #F0F0F0;
     bottom: 0;
@@ -406,7 +406,7 @@ footer>ul>li{
 
 
 
-footer>ul>li>pre{
+footer>ul>li>p{
     position: relative;
     margin-right: 20px;
     z-index: 3;
@@ -453,10 +453,67 @@ footer>ul>li>pre{
 
 @media all and (max-width:1200px) {
 
+    .content_element>ul {
+        width: 100dvw;
+    }
+
+    #project>h2 {
+        font-size: 2.5rem;
+        padding: 3dvh 5dvw 1dvh 5dvw ;
+        text-align: left;
+        margin: 0;
+    }
+
+    .category {
+        margin: 0px;
+        padding: 2dvh 5dvw 2dvh 5dvw;
+        flex-wrap: wrap;
+        margin-left: auto;
+        gap:1dvh;
+        justify-content: flex-end;
+    }
+
+    .category>li {
+        padding:0.8rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        height: 6dvh;
+    }
+
+    footer>ul>li{ 
+        width: 100dvw;
+        padding-top: 1dvh;
+    }
+
+
+    .roboto-capyright{
+        font-size: 0.7rem;
+    }
+
+    footer>ul>li>p {
+        position: relative;
+        margin-right: 0px;
+        width: calc(100dvw - 5dvw);
+        z-index: 3;
+        text-align: right;
+    }
 }
 
 @media all and (max-width:560px) {
 
+    .category {
+        gap:1.1dvh;
+    }
+
+    .category>li {
+        font-size: 0.9rem;
+    }
+
+    .roboto-capyright{
+        font-size: 0.6rem;
+    }
 
 }
 

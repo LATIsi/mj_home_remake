@@ -773,7 +773,8 @@ https://stackoverflow.com/questions/9730612/get-element-css-property-width-heigh
         padding-top: 5dvh;
     }
     .Righteous-title{
-        padding: 1dvh 15vw;
+        padding: 1dvh 20vw;
+        font-size: 1.6rem;
     }
 }
 
