@@ -2,7 +2,7 @@
 
 저를 소개하는 포트폴리오 홈페이지입니다.
 
-22년도에 만든것을 다시 리메이크 했습니다. 
+22년도에 만든것을 반응형과 디자인을 리메이크 했습니다. 
 
 </br>
 
@@ -11,18 +11,19 @@ GitHub Pages url : <a>https://LATIsi.github.io/mj_home_remake</a>
 </br>
 
 ## PC
-<img width="1378" height="773" alt="Image" src="https://github.com/user-attachments/assets/74e99deb-0773-438b-9400-399146bf7c7b" />
+<img width="938" height="548" alt="Image" src="https://github.com/user-attachments/assets/80f874af-855e-4899-b3e0-933fc10b3995" />
+1920px * 1080px 해상도 기준
 
 
 ## 모바일
+<img width="382" height="795" alt="Image" src="https://github.com/user-attachments/assets/1e91df08-7c49-4ab7-b1e3-cb03caa4383d" />
+360px * 800px 해상도 기준
 
-![image](https://user-images.githubusercontent.com/91597005/147817787-7ca30ba7-4476-4f1c-a2ac-22512f9d632f.png)
-
-
+</br>
 
 UI디자인은 figma로 디자인했습니다.
 
-figma url : <a>https://www.figma.com/design/ySerMXtsPgUKpPST4iqPbh/potpolio-team-library?m=auto&t=YAW087Q47k6F7WCD-1</a>
+figma url : <a>https://www.figma.com/design/V1ynLMTAKPJmOJpnw5wySb/portfolio?node-id=0-1&p=f&t=WPUjM1GCrM5z4lEQ-0</a>
 
 </br>
 
@@ -170,3 +171,11 @@ index.html을 연다
 <a>https://abcdqbbq.tistory.com/104</a>
 
 <br>
+
+사용한 이미지들 출처
+
+<a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%9C%84%EC%97%90-%EB%86%93%EC%9D%B8-macbook-pro-%ED%9D%B0%EC%83%89-imac-%EB%B0%8F-magic-mouse-%EC%98%86-hGV2TfOh0ns?utm\\\_content=creditCopyText\\\&utm\\\_medium=referral\\\&utm\\\_source=unsplash">Unsplash</a>의<a href="https://unsplash.com/ko/@domenicoloia?utm\\\_content=creditCopyText\\\&utm\\\_medium=referral\\\&utm\\\_source=unsplash">Domenico Loia</a>
+
+<br>
+
+<a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EC%B1%85%EC%97%90-%ED%8E%9C-05XkxdF5dhw?utm\_content=creditCopyText\&utm\_medium=referral\&utm\_source=unsplash">Unsplash</a>의<a href="https://unsplash.com/ko/@daiga\_ellaby?utm\_content=creditCopyText\&utm\_medium=referral\&utm\_source=unsplash">Daiga Ellaby</a>
