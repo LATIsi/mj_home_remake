@@ -12,18 +12,22 @@ GitHub Pages url : <a>https://LATIsi.github.io/mj_home_remake</a>
 
 ## PC
 <img width="938" height="548" alt="Image" src="https://github.com/user-attachments/assets/80f874af-855e-4899-b3e0-933fc10b3995" />
-1920px * 1080px 해상도 기준
 
+</br>
+
+1920px * 1080px 해상도를 기준으로 디자인 했습니다.
+
+</br>
 
 ## 모바일
 <img width="382" height="795" alt="Image" src="https://github.com/user-attachments/assets/1e91df08-7c49-4ab7-b1e3-cb03caa4383d" />
-360px * 800px 해상도 기준
+
+</br>
+360px * 800px 해상도 기준으로 디자인 했습니다.
 
 </br>
 
 UI디자인은 figma로 디자인했습니다.
-
-figma url : <a>https://www.figma.com/design/V1ynLMTAKPJmOJpnw5wySb/portfolio?node-id=0-1&p=f&t=WPUjM1GCrM5z4lEQ-0</a>
 
 </br>
 
